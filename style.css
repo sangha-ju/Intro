@@ -1,10 +1,12 @@
 @charset "utf-8";
 
 :root{
-    --main-color: #5d9a82;
+    --main-color: #5d9ab2;
     --accent-color: #bf6a7a;
     --dark-color: #2b5566;
     --text-bright-color: #fff;
+    --icon-color: #fff;
+    --icon-bk-color: #ddd;
 }
 
 body{
@@ -59,6 +61,10 @@ body{
     text-decoration: none;
 }
 
+.conA a:hover{
+    background-image: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2));
+}
+
 @media(min-width: 768px){
     .conA h1{
         font-size: 115px;
@@ -67,4 +73,42 @@ body{
     .conA p{
         font-size: 24px;
     }
+}
+
+.conB h2{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.conB p{
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.8;
+    opacity: 0.8;
+}
+
+.conB a{
+    color: #5d9ab2;
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.conB a:hover{
+    text-decoration: underline;
+}
+
+.conB .icon{
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 40px;
+    width: 2em;
+    line-height: 2em;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #ddd;
+    background-color: var(--icon-bk-color);
+    color: #fff;
+    color: var(--icon-color);
 }
